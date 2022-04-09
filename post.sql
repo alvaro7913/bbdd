@@ -1,6 +1,6 @@
 \c alvaro
 DROP DATABASE posts;
-CREAT DATABASE posts;
+CREATE DATABASE posts;
 \c posts
 -- crar tabla con id, usuario, fecha, contenido y descripción
 
@@ -18,7 +18,7 @@ VALUES ( 'Pamela', '2021-04-07', 'como saber', 'otra vez');
 INSERT INTO post (userName, creatdAt, content, description)
 VALUES ( 'Pamela', '2021-04-07', 'como sabes', 'una vez');
 INSERT INTO post (userName, creatdAt, content, description)
-VALUES ( 'Calros', '2021-04-07', 'como sabes', 'una vez');
+VALUES ( 'Carlos', '2021-04-07', 'como sabes', 'una vez');
 SELECT * FROM post;
 
 ALTER TABLE post ADD title VARCHAR(100)
@@ -35,3 +35,5 @@ INSERT INTO post (userName, creatdAt, content, description, title)
 VALUES ('Pedro'; '2021-04-10', 'otra vez', 'el profe no está ni ahí', 'vamos por mas');
 SELECT * FROM post;
 
+DELETE FROM post WHERE userName = 'Carlos';
+SELECT * FROM post;
