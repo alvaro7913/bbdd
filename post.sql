@@ -35,9 +35,23 @@ INSERT INTO post (userName, creatdAt, content, description, title)
 VALUES ('Pedro'; '2021-04-10', 'otra vez', 'el profe no está ni ahí', 'vamos por mas');
 SELECT * FROM post;
 
+-- se va carlos
 DELETE FROM post WHERE userName = 'Carlos';
 SELECT * FROM post;
 
+-- Vuelve carlos
 INSERT INTO post (userName, creatdAt, content, description, title)
 VALUES ('Carlos'; '2021-04-11', 'volví a hacerlos sufrir', 'la venganza', 'vamos por 2');
 SELECT * FROM post;
+
+-- parte 2
+CREATE TABLE comentarios (
+    id SERIAL,
+    post_id INT,
+    createdAt DATE,
+    content VARCHAR,
+    FOREIGN KEY (post_id) REFERENCES post (id)
+);
+\dt
+
+
