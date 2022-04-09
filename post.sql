@@ -37,3 +37,7 @@ SELECT * FROM post;
 
 DELETE FROM post WHERE userName = 'Carlos';
 SELECT * FROM post;
+
+INSERT INTO post (userName, creatdAt, content, description, title)
+VALUES ('Carlos'; '2021-04-11', 'volví a hacerlos sufrir', 'la venganza', 'vamos por 2');
+SELECT * FROM post;
