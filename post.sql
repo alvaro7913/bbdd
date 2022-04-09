@@ -18,7 +18,11 @@ VALUES ( 'Pamela', '2021-04-07', 'como saber', 'otra vez');
 INSERT INTO post (userName, creatdAt, content, description)
 VALUES ( 'Pamela', '2021-04-07', 'como sabes', 'una vez');
 INSERT INTO post (userName, creatdAt, content, description)
-VALUES ( 'Carlos', '2021-04-07', 'como sabes', 'una vez');
+VALUES ( 'Pedro', '2021-04-06', 'como sabes', 'una vez');
+INSERT INTO post (userName, creatdAt, content, description)
+VALUES ( 'Pedro', '2021-04-06', 'no sabes', 'la vez');
+INSERT INTO post (userName, creatdAt, content, description)
+VALUES ( 'Carlos', '2021-04-07', 'como sabes', 'ultima vez');
 SELECT * FROM post;
 
 ALTER TABLE post ADD title VARCHAR(100)
@@ -30,9 +34,9 @@ UPDATE post SET title = 'Otro error' WHERE id =3;
 SELECT * FROM post;
 
 INSERT INTO post (userName, creatdAt, content, description, title)
-VALUES ('Pedro'; '2021-04-10', 'hoy por mi...', 'estoy por cerrar mi pc', 'adios');
+VALUES ('Pedro', '2021-04-10', 'hoy por mi...', 'estoy por cerrar mi pc', 'adios');
 INSERT INTO post (userName, creatdAt, content, description, title)
-VALUES ('Pedro'; '2021-04-10', 'otra vez', 'el profe no está ni ahí', 'vamos por mas');
+VALUES ('Pedro', '2021-04-10', 'otra vez', 'el profe no está ni ahí', 'vamos por mas');
 SELECT * FROM post;
 
 -- se va carlos
@@ -41,7 +45,7 @@ SELECT * FROM post;
 
 -- Vuelve carlos
 INSERT INTO post (userName, creatdAt, content, description, title)
-VALUES ('Carlos'; '2021-04-11', 'volví a hacerlos sufrir', 'la venganza', 'vamos por 2');
+VALUES ('Carlos', '2021-04-11', 'volví a hacerlos sufrir', 'la venganza', 'vamos por 2');
 SELECT * FROM post;
 
 -- parte 2
@@ -66,3 +70,9 @@ INSERT INTO comentarios(post_id, createdAt, content)
 VALUES(6,'2021-05-12 18:23:17', 'salida');
 INSERT INTO comentarios(post_id, createdAt, content)
 VALUES(6,'2021-05-13 12:43:17', 'recontacto');
+SELECT * FROM comentarios;
+
+-- post para margarita
+INSERT INTO post(userName, creatdAt, content, descripcion, title)
+VALUES('Margarita','2021-06-01 13:34:34', 'ya viene', 'la voz', 'patio de usa');
+SELECT * FROM post;
