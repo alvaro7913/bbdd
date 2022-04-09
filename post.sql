@@ -54,4 +54,15 @@ CREATE TABLE comentarios (
 );
 \dt
 
-
+INSERT INTO comentarios(post_id, createdAt, content)
+VALUES(1, '2021-05-10 15:16:13', 'puras tonteras');
+INSERT INTO comentarios(post_id, createdAt, content)
+VALUES(1, '2021-05-11 09:34:08', 'muchas mas tonteras');
+INSERT INTO comentarios(post_id, createdAt, content)
+VALUES(6, '2021-05-11 19:43:56', 'sed');
+INSERT INTO comentarios(post_id, createdAt, content)
+VALUES(6, '2021-05-12 15:45:18', 'hambre');
+INSERT INTO comentarios(post_id, createdAt, content)
+VALUES(6,'2021-05-12 18:23:17', 'salida');
+INSERT INTO comentarios(post_id, createdAt, content)
+VALUES(6,'2021-05-13 12:43:17', 'recontacto');
