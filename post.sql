@@ -1,10 +1,10 @@
 \c alvaro
-DROP DATABASE posts;
-CREATE DATABASE posts;
-\c posts
+DROP DATABASE post;
+CREATE DATABASE post;
+\c post
 -- crar tabla con id, usuario, fecha, contenido y descripción
 
-CREATE TABLE posts(
+CREATE TABLE post(
     id SERIAL,
     userName VARCHAR(30)
     createdAt DATE,
