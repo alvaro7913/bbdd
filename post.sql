@@ -29,3 +29,9 @@ UPDATE post SET title = 'Crecer es dificil' WHERE id =2;
 UPDATE post SET title = 'Otro error' WHERE id =3;
 SELECT * FROM post;
 
+INSERT INTO post (userName, creatdAt, content, description, title)
+VALUES ('Pedro'; '2021-04-10', 'hoy por mi...', 'estoy por cerrar mi pc', 'adios');
+INSERT INTO post (userName, creatdAt, content, description, title)
+VALUES ('Pedro'; '2021-04-10', 'otra vez', 'el profe no está ni ahí', 'vamos por mas');
+SELECT * FROM post;
+
