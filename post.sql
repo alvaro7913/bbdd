@@ -76,3 +76,15 @@ SELECT * FROM comentarios;
 INSERT INTO post(userName, creatdAt, content, descripcion, title)
 VALUES('Margarita','2021-06-01 13:34:34', 'ya viene', 'la voz', 'patio de usa');
 SELECT * FROM post;
+
+INSERT INTO comentarios(post_id, createdAt, content)
+VALUES(7,'2021-05-12 12:43:17', 'recordatorio');
+INSERT INTO comentarios(post_id, createdAt, content)
+VALUES(7,'2021-05-12 12:53:17', 'olvidatorio');
+INSERT INTO comentarios(post_id, createdAt, content)
+VALUES(7,'2021-05-12 16:45:37', 'me debo acordar que se me debe olvidar');
+INSERT INTO comentarios(post_id, createdAt, content)
+VALUES(7,'2021-05-12 16:55:17', 'y se me olvido');
+INSERT INTO comentarios(post_id, createdAt, content)
+VALUES(7,'2021-05-13 01:15:37', 'hasta cuando sigues');
+SELECT * FROM comentarios;
