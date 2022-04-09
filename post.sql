@@ -28,3 +28,4 @@ UPDATE post SET title = 'Crecer es bueno' WHERE id =1;
 UPDATE post SET title = 'Crecer es dificil' WHERE id =2;
 UPDATE post SET title = 'Otro error' WHERE id =3;
 SELECT * FROM post;
+
